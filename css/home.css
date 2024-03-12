@@ -1,0 +1,523 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  height: 55px;
+  background-color: #f37938;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  color: white;
+}
+
+.header p {
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+i {
+  height: fit-content;
+}
+
+.logo {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.listItems {
+  color: rgba(28, 26, 26, 0.6);
+  gap: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-left: 220px;
+}
+
+.navbar p:hover {
+  cursor: pointer;
+  color: #f37938;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  /* max-width: 100%; */
+  height: 300px;
+  position: relative;
+  margin-top: 25px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 67%;
+  width: 0.75%;
+  height: 65px;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  background-color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #f37938;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  position: absolute;
+  top: 110px;
+  /* bottom: 2px; */
+  width: 100%;
+  text-align: left;
+  margin-left: 150px;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.para {
+  width: 23%;
+  height: 120px;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.btn input {
+  width: 20%;
+  height: 40px;
+  background-color: #28b4cf;
+  color: white;
+  border: none;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  font-style: normal;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 3px;
+  background: darkgray;
+  opacity: 0.3;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: rgba(39, 71, 215, 0.878);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.about {
+  width: 48%;
+  height: 100px;
+  margin: 70px auto;
+  line-height: 1.3;
+}
+
+.about h1 {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.list {
+  width: 100%;
+  height: 330px;
+  margin-top: 10px;
+  background-color: #f6f6f6;
+  text-align: center;
+  display: flex;
+}
+
+.bkcircle {
+  background: rgb(238, 233, 233);
+  border-radius: 50px;
+  padding-top: 33px;
+}
+
+.list i {
+  text-align: center;
+  border-radius: 100%;
+  width: 130px;
+  height: 130px;
+  margin-top: 90px;
+  align-items: center;
+}
+
+.listName {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.listHead {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.listName p {
+  width: 200px;
+}
+
+.listDesc {
+  margin-top: 10px;
+  color: rgba(28, 26, 26, 0.6);
+}
+
+.portfolio {
+  color: rgba(28, 26, 26, 0.6);
+  height: 150px;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.portfolio h1,
+p,
+.aboutUs h1 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.portfolio p {
+  margin-top: 30px;
+  line-height: 1.5;
+}
+
+.listImage {
+  display: flex;
+  /* justify-content: end; */
+  height: 400px;
+  transition: opacity 0.2s ease-out;
+}
+
+.listImage img:hover {
+  opacity: 0.7;
+}
+
+.listImage p {
+  text-align: center;
+  color: rgb(119, 114, 114);
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.box img {
+  width: 400px;
+  cursor: pointer;
+}
+
+.box {
+  margin: 0 auto;
+}
+
+.aboutUs {
+  height: 700px;
+  background-color: #f6f6f6;
+  text-align: center;
+  height: 500px;
+}
+
+.abtport {
+  margin: 60px auto;
+  padding-top: 30px;
+}
+
+.abtp {
+  text-align: center;
+  width: 70%;
+  margin-left: 200px;
+}
+
+.portfolio_abt {
+  margin-top: 30px;
+  color: rgba(28, 26, 26, 0.6);
+  height: 230px;
+  text-align: center;
+  width: 90%;
+  margin-left: 50px;
+}
+
+.aboutUs h1 {
+  margin-top: 30px;
+}
+
+.aboutHeadP {
+  color: rgba(28, 26, 26, 0.6);
+  line-height: 20px;
+}
+
+.aboutDet {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.aboutHead {
+  margin-top: 20px;
+}
+
+.left,
+.right {
+  width: 30%;
+  text-align: center;
+}
+
+.btm {
+  height: 100px;
+  width: 50%;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.btmH {
+  margin-top: 30px;
+  align-items: center;
+  color: rgba(28, 26, 26, 0.6);
+  font-style: italic;
+  line-height: 20px;
+}
+
+.slickImageStyle {
+  width: 100px;
+}
+
+.nav {
+  background: #57c0c6;
+  margin-top: 70px;
+  height: 450px;
+}
+
+.bx1 {
+  color: white;
+  width: 25%;
+  margin-top: 80px;
+  text-align: center;
+  line-height: 25px;
+  font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.bx1 p {
+  margin-top: 40px;
+  font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bx1 input {
+  margin-top: 25px;
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  width: 110px;
+  height: 40px;
+  border: none;
+  font-family: "Patrick Hand", cursive;
+}
+
+.blog {
+  color: rgba(28, 26, 26, 0.6);
+  /* height: 150px; */
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.blog p {
+  margin-top: 20px;
+}
+
+.blogImages {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.blogimg img {
+  width: 400px;
+  /* height: 330px; */
+}
+
+.blogimg {
+  margin-top: 30px;
+  background-color: #e9f8fb;
+  /* height: 500px; */
+}
+
+.blogimg:hover {
+  background-color: #15bad8;
+  opacity: 0.5;
+}
+
+.blogimg:hover .blogP {
+  color: red;
+}
+
+.blogdet {
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.blogP {
+  color: #57c0c6;
+}
+
+.blogD {
+  color: rgba(28, 26, 26, 0.6);
+}
+
+.blogpost {
+  margin-top: 40px;
+  color: black;
+}
+
+.footerLinks {
+  margin-top: 75px;
+  background-color: #323942;
+  height: 100px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  /* text-align: center; */
+}
+
+.followUs {
+  font-family: "Acme", sans-serif;
+  letter-spacing: 2px;
+  width: 700px;
+  /* background-color: red; */
+  text-align: center;
+  margin-top: 30px;
+}
+
+.social {
+  display: flex;
+  justify-content: right;
+  gap: 30px;
+  color: #323942;
+  margin-right: 150px;
+  margin-top: 30px;
+}
+
+.circle-icon {
+  background: #526174;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.circle-icon:hover {
+  background: white;
+}
+.footer {
+  background-color: black;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  color: white;
+}
+
+.followUs {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100px;
+  /* width: 100px; */
+}
+
+.links {
+  color: #57c0c6;
+}
+
+.abtUs {
+  width: 600px;
+  margin: 30px 70px;
+  text-align: left;
+  line-height: 30px;
+  color: #c8ccd3;
+}
+
+.abtUs h4 {
+  margin-bottom: 30px;
+  margin-right: 35px;
+  text-align: center;
+}
+
+.dated {
+  color: white;
+}
